@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        width: 100%;
+        background-color: grey;
+        color: black;
+        text-align: center;
+        }
+    
+    </style>
+  </head>
+
+  <body style ="background: lightgray">
+
+    <header>
+      <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md bg-light justify-content-between fixed-top" style ="background: white">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style = "color: white; background: #01A9DB ;">Latitude</a>
+        <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="temp.html">Temperature vs Latitude</a></li>
+                <li><a href="cloud.html">Cloudiness vs Latitude</a></li>
+                <li><a href="humid.html">Humidity vs Latitude</a></li>
+                <li><a href="windspeed.html">Wind Speed vs Latitude</a></li>
+            </ul>
+        </li>
+
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <!--<div class =" row">-->
+        <div class = "col-md-10 container" style ="background: white; padding: 20px; margin:10px;">
+                <img src="Results/LatitudevsTemperature.png" alt="latvtemp_image">
+                <img src="Results/LatitudevsHumidity.png" alt="latvhumid_image">
+                <img src="Results/LatitudevsCloudiness.png" alt="latvcloud_image">
+                <img src="Results/LatitudevsWindSpeed.png" alt="latvwind_image"> 
+              </div>
+        </div>
+      <!--</div>-->
+       
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span >
+              <p>Data Analytics Bootcamp 2019 - <a href="https://github.com/baokiddy"style = "color: #01A9DB ;">Bella Okiddy</a></p>
+        </span>
+      </div>
+    </footer>
+
+  </body>
+</html>
